@@ -4,7 +4,7 @@ var restartbtn = document.querySelector('.restartbtn')
 numberbtn.addEventListener('click', function () {
     var myNumber = Math.floor((Math.random() * 10 + 1))
     for (let i = 0; i < 3; i++) {
-        var value = prompt(`take a number between 1 to 10 : left chances ${3 - (i + 1)}`)
+        var value = prompt(`take a number between 1 to 10 : left chances ${3 - (i)}`)
         value = parseInt(value)
         if (value === myNumber) {
             alert('You Win')
